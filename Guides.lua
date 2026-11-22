@@ -1,6 +1,6 @@
 local ADDON, ns = ...
 local P = Polestar
-local AUTHOR = "Suncoast Developer Guild"
+local AUTHOR = "SDG"
 local packs = { Mining = "gathering-mining-routes", Herbalism = "gathering-herbalism-routes" }
 
 for _, profession in ipairs({ "Mining", "Herbalism" }) do
@@ -10,7 +10,7 @@ for _, profession in ipairs({ "Mining", "Herbalism" }) do
 		license = "MIT",
 		source = "Circuits adapted from Icy Veins WoW Forever " .. profession .. " maps.",
 	})
-	if not ok then error("Gathering Routes: pack refused: " .. tostring(reason)) end
+	if not ok then error("PolestarPack_Grinding: pack refused: " .. tostring(reason)) end
 end
 
 for _, route in ipairs(ns.Routes) do
@@ -48,7 +48,7 @@ for _, route in ipairs(ns.Routes) do
 		pitch = ("%s skill %d-%d"):format(profession, minSkill, maxSkill),
 		keywords = { profession:lower(), "gathering", "circuit" }, steps = steps,
 	})
-	if not ok then error("Gathering Routes: guide " .. route.id .. " refused: " .. tostring(reason)) end
+	if not ok then error("PolestarPack_Grinding: guide " .. route.id .. " refused: " .. tostring(reason)) end
 end
 
 ns.Routes = nil

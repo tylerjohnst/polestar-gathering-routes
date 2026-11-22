@@ -1,0 +1,16 @@
+## Interface: 16001
+## Title: Polestar Community: Grinding
+## Notes: Community grinding, mining, and herbalism guides for Polestar by SDG.
+## Author: SDG
+## Version: 0.2.0
+## Category: Quests
+## Group: Polestar
+## Dependencies: Polestar
+## X-Polestar-Pack: community-grinding-spots
+## X-Polestar-Format: 10
+## X-Polestar-Needs: 0.4.0
+## X-License: MIT
+
+Routes.lua
+Guides.lua
+GrindGuides.lua
